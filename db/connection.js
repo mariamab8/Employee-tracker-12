@@ -1,13 +1,15 @@
-const mysql = require('mysql2');
+// node
+import mysql from "mysql2"
 //require('dotenv').config();
 
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: '127.0.0.1',
     // Your MySQL username,
-    user: 'mariam',
+   
+    user: 'root',
     // Your MySQL password
-    password: 'bootcamp123',
+    password: '',
     database: 'employee_tracker_db'
 });
 
-module.exports = db;
+export default db;

@@ -1,6 +1,9 @@
 // Variable Definitions & Dependencies
-const inquirer = require('inquirer');
-const db = require('./db/connection');
+// const inquirer = require('inquirer');
+import inquirer from 'inquirer'
+// const db = require('/Users/mariamabah/Desktop/Employee-tracker-12/db/connection.js');
+
+import db from '/Users/mariamabah/Desktop/Employee-tracker-12/db/connection.js'
 
 // Start server after DB connection
 db.connect(err => {
